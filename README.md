@@ -54,19 +54,19 @@ The ultimate goal is to build a solid foundation in Artificial Intelligence Arch
   - Defining JSON Schemas describing application functions (e.g., `count_database_files`, `query_rag_knowledge_base`).
   - Handling the LLM's structured JSON response requesting execution of function X with parameters Y.
   - Executing local code and passing results back to the LLM to formulate the final answer.
-- [ ] **Introduction to LangChain:**
+- [x] **Introduction to LangChain:**
   - Using LangChain.js to encapsulate complex pipelines.
-  - Building `Chains` connecting the LLM to simulated tools (e.g., mock APIs for Zip Code lookup, weather, or currency exchange).
+  - Building `Chains` connecting the LLM to simulated tools (e.g., mock APIs for Credit Bureau/Open Finance lookup and deterministic financial calculators).
 
 ---
 
 ### 🔄 Phase 4: Orchestration & Complex Workflows (Week 4)
 *Building multi-agent systems and cyclic workflows.*
 
-- [ ] **LangGraph:**
+- [x] **LangGraph:**
   - Designing cyclic graph workflows instead of linear chains.
   - Creating decision nodes where agents evaluate their own output, validate quality, and decide whether to refine or conclude.
-- [ ] **Multi-Agent Architectures:**
+- [x] **Multi-Agent Architectures:**
   - Exploring architectural concepts of specialized agents (Researcher Agent, Reviewer Agent, Manager Agent).
   - Replicating multi-agent orchestration patterns using LangGraph in TypeScript/Node.js.
 

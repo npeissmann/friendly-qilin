@@ -6,6 +6,7 @@ import { swaggerSpec } from './swagger.js';
 import { generateRouter } from './routes/generate.js';
 import { embeddingRouter } from './routes/embedding.js';
 import { toolsRouter } from './routes/tools.js';
+import { langchainRouter } from './routes/langchain.js';
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/api', generateRouter);
 app.use('/api', embeddingRouter);
 app.use('/api', toolsRouter);
+app.use('/api', langchainRouter);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
