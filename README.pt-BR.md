@@ -54,19 +54,19 @@ O objetivo final é construir uma base sólida em arquitetura de inteligência a
   - Envio de JSON Schemas descrevendo funções do sistema para o LLM (ex: `count_database_files`, `query_rag_knowledge_base`).
   - Processamento do retorno estruturado do LLM solicitando a execução de funções.
   - Execução da função na aplicação e envio do resultado de volta ao LLM para formulação da resposta final.
-- [ ] **Introdução ao LangChain:**
+- [x] **Introdução ao LangChain:**
   - Uso do LangChain.js para encapsulamento de pipelines.
-  - Criação de `Chains` conectando o LLM a ferramentas simuladas (ex: APIs de consulta de CEP, clima ou cotação de moedas).
+  - Criação de `Chains` conectando o LLM a ferramentas simuladas (ex: APIs simuladas de Bureau de Crédito/Open Finance e calculadora financeira determinística).
 
 ---
 
 ### 🔄 Fase 4: Orquestração e Fluxos Complexos (4ª Semana)
 *Construção de sistemas multi-agentes e fluxos cíclicos.*
 
-- [ ] **LangGraph:**
+- [x] **LangGraph:**
   - Criação de grafos de decisão e fluxos cíclicos de agentes.
   - Implementação de nós de avaliação onde o agente analisa a própria resposta, valida a qualidade e decide se refaz a busca ou finaliza.
-- [ ] **Arquitetura Multi-Agente:**
+- [x] **Arquitetura Multi-Agente:**
   - Estudo de padrões de agentes especializados (Agente Pesquisador, Agente Revisor, Agente Gerente).
   - Replicação de fluxos multi-agente utilizando LangGraph em TypeScript/Node.js.
 

@@ -1,17 +1,18 @@
-# Use LTS Node.js Alpine base image
-FROM node:22-alpine
+# Use LTS Node.js Debian Bookworm slim base image
+FROM node:22-bookworm-slim
 
 WORKDIR /app
 
 # Copy dependency manifests
-COPY package*.json ./
+COPY package.json ./
 
 # Install dependencies inside the container
 RUN npm install
 
-# Copy source code and configuration
+# Copy source code, docs, and configuration
 COPY tsconfig.json ./
 COPY src ./src
+COPY docs ./docs
 
 # Expose port 3000
 EXPOSE 3000
